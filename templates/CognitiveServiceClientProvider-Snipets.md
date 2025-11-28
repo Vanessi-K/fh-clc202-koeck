@@ -1,6 +1,6 @@
 1) define endpoint strings
 ```
-private String endpoint = "westeurope.api.cognitive.microsoft.com";
+private String endpoint = "germanywestcentral.api.cognitive.microsoft.com";
 private String subscriptionKeyEnvVarName = "SUBSCRIPTIONKEY";
 private String endpointPath = "vision/v3.2/analyze";
 ```

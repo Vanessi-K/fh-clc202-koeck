@@ -35,7 +35,7 @@ Microsoft introduced the requirement to agree to their "Responsible AI" terms of
 14) Make sure your Student Subscription is selected if you already have several subscriptions
 15) Click "Create new" below the "Resource group" dropdown. The list should be empty if you have not created any Azure resources so far
 16) enter a name for your resource group (which name is not important since we will delte it right after creating the Cognitive Service account)
-17) In the "Region" dropdown, select "West Europe"
+17) In the "Region" dropdown, select "Germany West Central"
 18) Enter a name for the resource (again it does not matter which one since we will delete it again)
 19) Unter Pricing Tier, select "Standard S0"
 20) Check the box to acknowledge the Responsible AI terms

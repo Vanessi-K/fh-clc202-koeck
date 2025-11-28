@@ -126,6 +126,7 @@ resource sites_fh_clc3_example_name_web 'Microsoft.Web/sites/config@2022-03-01' 
     linuxFxVersion: 'JAVA|11'
     requestTracingEnabled: false
     remoteDebuggingEnabled: false
+    remoteDebuggingVersion: 'VS2022'
     httpLoggingEnabled: false
     acrUseManagedIdentityCreds: false
     logsDirectorySizeLimit: 35
