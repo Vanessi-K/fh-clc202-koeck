@@ -1,5 +1,5 @@
 param deploymentName string
-param rgName string = 'clc-2025-se2410454016-VK'
+param rgName string
 param location string
 
 targetScope = 'subscription'

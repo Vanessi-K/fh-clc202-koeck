@@ -72,7 +72,7 @@ Tenant: FH OOe
 Subscription: Azure for Students (fb0e8e47-e203-45b3-a725-3a365ce122ba)
 ```
 4) execute `az account set --subscription < Subscription ID from above output>`
-5) execute `az deployment sub create --template-file main.bicep --location EastUs`
+5) execute `az deployment sub create --template-file main.bicep --location sweden-central --parameters location=sweden-central`
    - The deployment will ask for the following values:
      - 'deploymentName': free choosable name for the deployment (e.g. `clc3-example`)
      - 'rgName': name of the resource group which should be created for the deployment(e.g. `rg-clc3-example-<lastname>`)

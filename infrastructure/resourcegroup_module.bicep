@@ -2,7 +2,7 @@ targetScope = 'resourceGroup'
 
 param connections_ascalert_name string = 'ascalert'
 param connections_azureblob_name string = 'azureblob'
-param location string = 'sweden-central'
+param location string = 'swedencentral'
 
 var contentshare_name = 'functioncontentshare'
 var cosmosdb_name = 'fh-clc3-cosmosdb-${uniqueString(resourceGroup().id)}'
