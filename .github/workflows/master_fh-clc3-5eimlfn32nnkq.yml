@@ -24,7 +24,7 @@ jobs:
 
       - name: Setup Java Sdk ${{ env.JAVA_VERSION }}
         uses: actions/setup-java@v1
-        with: |+
+        with:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: 'Restore Project Dependencies Using Mvn'
@@ -42,4 +42,5 @@ jobs:
           slot-name: 'Production'
           package: '${{ env.PACKAGE_DIRECTORY }}'
           respect-pom-xml: true
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9634B7786D2F409CB28C6719A6225368 }}
