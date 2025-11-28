@@ -101,6 +101,7 @@ If the above deployment worked without errors you can deploy the function code a
 At this point, your function should be ready to upload an image to the blob storage. What's missing now is the configuration of the Logic App that get's triggered after a new file is added to the blob container and sends it to the Computer Vision service for analysis.
 
 ---
+
 ## Logic App Setup
 
 ### Prerequisites
