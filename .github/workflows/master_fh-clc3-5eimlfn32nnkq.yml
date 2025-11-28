@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Java project to Azure Function App - fh-clc3-hpzgimunllukg
+name: Build and deploy Java project to Azure Function App - fh-clc3-5eimlfn32nnkq
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_NAME: fh-clc3-hpzgimunllukg # set this to your function app name on Azure
+  AZURE_FUNCTIONAPP_NAME: fh-clc3-5eimlfn32nnkq # set this to your function app name on Azure
   PACKAGE_DIRECTORY: '.' # set this to the directory which contains pom.xml file
   JAVA_VERSION: '11' # set this to the java version to use
 
@@ -24,7 +24,7 @@ jobs:
 
       - name: Setup Java Sdk ${{ env.JAVA_VERSION }}
         uses: actions/setup-java@v1
-        with: 
+        with:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: 'Restore Project Dependencies Using Mvn'
@@ -38,8 +38,9 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'fh-clc3-hpzgimunllukg'
+          app-name: 'fh-clc3-5eimlfn32nnkq'
           slot-name: 'Production'
           package: '${{ env.PACKAGE_DIRECTORY }}'
           respect-pom-xml: true
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_817E1CAE5C0241458343ED52D760C3C4 }}
+
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9634B7786D2F409CB28C6719A6225368 }}
